@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: pink ;
+            position: relative;
+            top: 10px;
+            left: 50px;
+            transition: all 0.5s ease-in;
+        }
+        #box1{background-color: aqua;}
+        #box1:hover{transform: rotate(180deg);}
+        #box2{background-color: pink;}
+        #box2:hover{transform: rotatex(180deg);}
+        #box3{background-color: red;}
+        #box3:hover{transform: rotatey(180deg);}
+        #box4{background-color: greenyellow;}
+        #box4:hover{transform: rotatez(180deg);}
+        #box5{background-color: burlywood;}
+        #box5:hover{transform: scalex(5);}
+        #box6{background-color:cadetblue;}
+        #box6:hover{transform: scaley(5);}
+        #box7{background-color:darkseagreen;}
+        #box7:hover{transform: scalez(5);}                  /*z axis scale wont work*/
+        #box8{background-color:khaki;}
+        #box8:hover{transform: scale(5);}
+        #box9{background-color:khaki;}
+        #box9:hover{transform: translate(50px);}
+        #box10{background-color:khaki;}
+        #box10:hover{transform: translate(-50px);}
+        #box11{background-color:khaki;}
+        #box11:hover{transform: translate(50px,-50px);}
+        #box12{background-color:khaki;}
+        #box12:hover{transform:skewX(45deg);} /*skew in x axis*/
+
+        /*you have option of rotex, rotez, rotey for x,z,y axis respectively*/
+        
+    </style>
+</head>
+<body>
+    <div id = "box1" class="box">rotate</div>
+    <div id = "box2" class="box">rotate x</div>
+    <div id = "box3" class="box">rotate y</div>
+    <div id = "box4" class="box">rotate z</div>
+    <div id="box5" class="box">scale 5 times x</div>
+    <div id="box6" class="box">scale 5 times y</div>
+    <div id="box7" class="box">scale 5 times z</div>           <!--z axis wont work-->
+    <div id="box8" class="box">scale 5 times</div>
+    <div id="box9" class="box">translate positive</div>
+    <div id="box10" class="box">translate negative</div>
+    <div id="box11" class="box">translate</div>
+    <div id="box12" class="box">skew in x</div>
+</body>
+</html>

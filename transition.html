@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>transition</title>
+    <style>
+        .pseudo{
+            height:25px ;
+            width:150px ;
+            background-color: forestgreen;
+            border:2px solid black;
+            border-radius: 10px;
+            
+            transition: all;
+            transition: 1s;
+        }
+        .pseudo:hover{
+            height:30px ;
+            width: 160px;
+            background-color: red ;
+        }
+        .pseudo:active{
+            height:30px ;
+            width: 160px;
+            background-color: red ;
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo">Click Me</button>
+</body>
+</html>
